@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+
+
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/reset.min.css" />
+
+
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+
+<script type="text/javascript" src="scripts/controller.js"></script>
+<script type="text/javascript" src="scripts/model.js"></script>
+<script type="text/javascript" src="scripts/graph.js"></script>
+
+</head>
+<style>
+
+
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+</style>
+
+<body>
+
+	<div id="hhd_home">
+
+		<div id="banner" >
+		</div>
+		<div id="hbd_container">
+			<div id="hbd">
+				<div class="community_left" id="bloglist" style="position:relative">
+				<div class="person_image" style="right:100; top:100; word-break:break-all">
+				</div>
+				<div class="descriptionBox" style="right:0; top:0; word-break:break-all">
+						<font color="#ff8000">
+						人口统计学等基本属性
+						</font>
+						<br></br>
+						<label class="descriptionLabel">性别：</label> 
+						<label id="person_gender" style="float:left">t</label> &nbsp;
+						<label class="descriptionLabel">&nbsp年龄：</label>
+						<label id="person_age" style="float:left">t</label> &nbsp;
+						<label class="descriptionLabel">&nbsp地域：</label>
+						<label id="person_region" style="float:left">t</label>
+						<br>
+						<label class="descriptionLabel">星座：</label>
+						<label id="person_constellation">t</label>
+						<label class="descriptionLabel">教育程度：</label>
+						<label id="person_education">t</label>
+						<label class="descriptionLabel">毕业学校：</label>
+						<label id="person_institution"></label>
+						<label class="descriptionLabel">所在公司：</label>
+						<label id="person_company"></label>
+						
+						<label class="descriptionLabel">职位信息：</label>
+						<label id="person_position"></label>
+						<label class="descriptionLabel">收入水平：</label>
+						<label id="person_income"></label>	
+						</br>
+					</div>
+					<div class="descriptionBox" style="left:0; top:0">
+						<font color="#ff8000">品牌社交互动属性</font>
+						<br></br>
+						<label class="descriptionLabel">品牌互动倾向：</label>
+						<label id="brand_interaction">5.0</label>
+						<label class="descriptionLabel">品牌喜好：</label>
+						<label id="brand_preference">+6.0</label>
+						<br>
+						<font class="descriptionLabel" color="#ff8000">品牌消费属性</font>
+						<br>
+						<label class="descriptionLabel">感兴趣的品牌：</label>
+						<label id="brand_interested">ZARA,H&M</label>
+						<label class="descriptionLabel">曾经消费的品牌：</label>
+						<label id="brand_purchased">levis牛仔裤， 28码</label>
+						
+					</div>
+					<div class="descriptionBox" style="right:0; bottom:0">
+						<label class="descriptionLabel">
+							<font color="#ff8000">生活兴趣：</font>
+						</label>
+						<br>
+						<label id="personal_interests">旅游，网购，宅</label>
+						<br>
+						<label class="descriptionLabel">
+							<font color="#ff8000">职业兴趣：</font>
+						</label>
+						<br>
+						<label id="professional_interests">社会化营销，数据挖掘，PHP</label>
+						<br>
+						<label class="descriptionLabel">
+							<font color="#ff8000">媒体倾向：</font>
+						</label>
+						<br>
+						<label id="media_preference">网络媒体，认证名人</label>
+					</div>
+					<div class="descriptionBox" style="left:0; bottom:0">
+						<font color="#ff8000">社交媒体属性</font>
+						<br></br>
+						<label class="descriptionLabel">社会化影响力：</label>
+						<label id="social_influence">6.0</label>
+						<label class="descriptionLabel">社交活跃度：</label>
+						<label id="social_activity">7.0</label>
+						<label class="descriptionLabel">影响力领域：</label>
+						<label id="social_influence_area">IT 互联网</label>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	 <div id="personInfo"></div>
+	
+	<div id="foot">
+		<div style="text-align:center;color:#FFF;font-size: 1.2em;" >Copyright 2013. All right reserved</div>
+	</div>
+	<script >
+		graph();
+	</script>
+</body>
