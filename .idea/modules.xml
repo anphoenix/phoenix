@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/data_model/data_model.iml" filepath="$PROJECT_DIR$/data_model/data_model.iml" />
-      <module fileurl="file://$PROJECT_DIR$/web/phoenix.iml" filepath="$PROJECT_DIR$/web/phoenix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
 </project>
