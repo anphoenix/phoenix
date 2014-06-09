@@ -1,4 +1,4 @@
-package com.ibm.bluemix.phoenix.api.resource;
+package com.phoenix.api.resource;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.ws.rs.GET;
@@ -11,8 +11,8 @@ import javax.ws.rs.core.Response;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.ibm.bluemix.phoenix.api.RESTApplication;
-import com.ibm.bluemix.phoenix.controller.PersonManager;
+import com.phoenix.api.RESTApplication;
+import com.phoenix.controller.PersonManager;
 
 
 @Path("/persons")

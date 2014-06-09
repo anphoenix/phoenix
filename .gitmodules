@@ -1,0 +1,3 @@
+[submodule "data_model"]
+	path = data_model
+	url = git@github.com:anphoenix/data_model.git

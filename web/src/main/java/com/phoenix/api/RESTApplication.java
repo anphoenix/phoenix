@@ -1,4 +1,4 @@
-package com.ibm.bluemix.phoenix.api;
+package com.phoenix.api;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -11,7 +11,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.introspect.JacksonAnnotationIntrospector;
 import org.codehaus.jackson.xc.JaxbAnnotationIntrospector;
 
-import com.ibm.bluemix.phoenix.api.resource.PersonResource;
+import com.phoenix.api.resource.PersonResource;
 
 
 

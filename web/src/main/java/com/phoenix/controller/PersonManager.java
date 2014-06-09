@@ -1,6 +1,4 @@
-package com.ibm.bluemix.phoenix.controller;
-
-
+package com.phoenix.controller;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
