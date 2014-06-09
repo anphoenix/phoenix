@@ -12,8 +12,6 @@
 hs_err_pid*
 
 #configuration for intellj
-.idea/*
-*.iml
 
 #configuration for eclipse
 
