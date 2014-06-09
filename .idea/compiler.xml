@@ -23,7 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="data_model" />
-        <module name="web" />
+        <module name="phoenix" />
       </profile>
     </annotationProcessing>
   </component>
