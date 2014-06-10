@@ -37,7 +37,7 @@ public class PersonResource {
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getPersonInfoByID(@Context HttpServletRequest req, @PathParam("id") String id) {
-		JsonObject person = PersonManager.getPersoninfobyID(id);
+		JsonObject person = PersonManager.getPersonInfobyID(id);
 		try{
 			return Response.ok().entity(person.toString()).type(MediaType.APPLICATION_JSON).build();
 		} catch(Exception e) {
