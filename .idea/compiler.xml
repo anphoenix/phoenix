@@ -24,6 +24,7 @@
         <processorPath useClasspath="true" />
         <module name="data_model" />
         <module name="phoenix" />
+        <module name="web" />
       </profile>
     </annotationProcessing>
   </component>
