@@ -28,14 +28,27 @@ var controller = {
 	onSuccessGetPersonInfo : function(data)
 	{
         (data.g) ? $("#person_gender").text(data.g) : $("#person_gender").text(" ");
-        (data.c) ? $("#person_region").text(data.c) : $("#person_region").text(" ");
-        (data.constellation) ? $("#person_constellation").text(data.constellation) :$("#person_constellation").text(" ");
-        (data.education) ? $("#person_education").text(data.education): $("#person_education").text(" ");
-        (data.institutions) ? $("#person_institution").text(data.institutions) :$("#person_institution").text(" ");
-        (data.company) ? $("#person_company").text(data.company) : $("#person_company").text(" ");
-        (data.position) ? $("#person_position").text(data.position) : $("#person_position").text(" ");
-        (data.income) ? $("#person_income").text(data.income):$("#person_income").text(" ");
-		
+
+        if (data.c) {
+            if (data.p) {
+                ("#person_region").text(data.p + ", " + data.c);
+            } else {
+                ("#person_region").text(data.c);
+            }
+        } else {
+            if (data.p) {
+                ("#person_region").text(data.p);
+            } else {
+                ("#person_region").text(" ");
+
+            }
+        }
+
+        (data.frc) ? $("#friend_count").text(data.frc) :$("#friend_count").text(" ");
+        (data.foc) ? $("#follow_count").text(data.foc): $("#follow_count").text(" ");
+        (data.s) ? $("#status_count").text(data.s) :$("#status_count").text(" ");
+        (data.d) ? $("#person_discription").text(data.d) : $("#person_discription").text(" ");
+
 	},
 	onErrorGetPersonInfo : function()
 	{
