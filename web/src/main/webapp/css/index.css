@@ -736,3 +736,12 @@ margin: 0 0;
 	float: left
 	
 }
+
+.display_bar {
+    background:#AAAAAA;
+    float:left
+
+}
+
+progress::-webkit-progress-bar { background: #CCCCCC; }
+progress::-webkit-progress-value { background: #2828FF; }
