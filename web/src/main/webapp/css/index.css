@@ -714,11 +714,11 @@ margin: 0 0;
 	position: absolute;
 	
 	background-color: #F2F2F2;	
-	height: 200px;
+	height: 240px;
     width: 265px;
     padding: 10px 10px 10px 10px;
     margin:10px 10px 10px 10px;
-    line-height: 22px;
+    line-height: 24px;
 	border-radius: 12px;
 }
 
@@ -734,12 +734,19 @@ margin: 0 0;
 
 .descriptionLabel {
 	float: left;
-    font-size: 1em/*{fsDefault}*/;
+    font-size: 0.9em/*{fsDefault}*/;
     font-weight: normal;
     font-family: 微软雅黑,Verdana,Arial,sans-serif/*{ffDefault}*/;
-    color:#218868;
+    color:#00008B;
 }
 
+.descriptionvalue {
+
+    font-size: 0.8em;
+    font-weight: normal;
+    font-family: 微软雅黑,Verdana,Arial,sans-serif/*{ffDefault}*/;
+    color:#2F4F4F;
+}
 .display_bar {
     background:#AAAAAA;
     float:left;
