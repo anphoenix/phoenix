@@ -25,21 +25,25 @@ var controller = {
 			return theRequest;
 	},
 	
-	onSuccessGetPersonInfo : function(data)
-	{
-        (data.g) ? $("#person_gender").text(data.g) : $("#person_gender").text(" ");
-
+	onSuccessGetPersonInfo : function(data) {
+        if (data.g) {
+            if(data.g=="m")
+                $("#person_gender").text("女");
+            else
+                $("#person_gender").text("男");
+        }
+        else $("#person_gender").text("null");
         if (data.c) {
             if (data.p) {
-                ("#person_region").text(data.p + ", " + data.c);
+                $("#person_region").text(data.p + ", " + data.c);
             } else {
-                ("#person_region").text(data.c);
+                $("#person_region").text(data.c);
             }
         } else {
             if (data.p) {
-                ("#person_region").text(data.p);
+                $("#person_region").text(data.p);
             } else {
-                ("#person_region").text(" ");
+                $("#person_region").text(" ");
 
             }
         }
@@ -57,7 +61,7 @@ var controller = {
 	showPersonInfoByID : function(ID)
 	{
 		model.getPersonByID(ID, controller.onSuccessGetPersonInfo, controller.onErrorGetPersonInfo);
-	},
+	}
 };
 $(function() {
 	controller._init();

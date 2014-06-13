@@ -733,14 +733,17 @@ margin: 0 0;
 }
 
 .descriptionLabel {
-	float: left
-	
+	float: left;
+    font-size: 1em/*{fsDefault}*/;
+    font-weight: normal;
+    font-family: 微软雅黑,Verdana,Arial,sans-serif/*{ffDefault}*/;
+    color:#218868;
 }
 
 .display_bar {
     background:#AAAAAA;
-    float:left
-
+    float:left;
+    width: 120px;
 }
 
 progress::-webkit-progress-bar { background: #CCCCCC; }
