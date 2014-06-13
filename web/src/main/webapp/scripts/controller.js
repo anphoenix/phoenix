@@ -27,15 +27,14 @@ var controller = {
 	
 	onSuccessGetPersonInfo : function(data)
 	{
-		$("#person_age").text(data.age);
-		$("#person_gender").text(data.gender);
-		$("#person_region").text(data.region);
-		$("#person_constellation").text(data.constellation);
-		$("#person_education").text(data.education);
-		$("#person_institution").text(data.institutions);
-		$("#person_company").text(data.company);
-		$("#person_position").text(data.position);
-		$("#person_income").text(data.income);
+        (data.g) ? $("#person_gender").text(data.g) : $("#person_gender").text(" ");
+        (data.c) ? $("#person_region").text(data.c) : $("#person_region").text(" ");
+        (data.constellation) ? $("#person_constellation").text(data.constellation) :$("#person_constellation").text(" ");
+        (data.education) ? $("#person_education").text(data.education): $("#person_education").text(" ");
+        (data.institutions) ? $("#person_institution").text(data.institutions) :$("#person_institution").text(" ");
+        (data.company) ? $("#person_company").text(data.company) : $("#person_company").text(" ");
+        (data.position) ? $("#person_position").text(data.position) : $("#person_position").text(" ");
+        (data.income) ? $("#person_income").text(data.income):$("#person_income").text(" ");
 		
 	},
 	onErrorGetPersonInfo : function()
