@@ -31,7 +31,7 @@ public class PersonManager {
             public void process(Result rs) {
                 if(rs.isEmpty()) {
                     System.out.println("No query result found");
-                    return;
+                    return ;
                 }
                 for (Cell cell : rs.listCells()) {
                     person.addProperty(Bytes.toString(CellUtil.cloneQualifier(cell)),
@@ -40,6 +40,7 @@ public class PersonManager {
             }
         };
         try {
+            // query person info by id
             HBaseUtil.getResult("Person", id, handler);
         } catch (IOException e) {
             e.printStackTrace();

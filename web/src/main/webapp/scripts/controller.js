@@ -52,7 +52,7 @@ var controller = {
         (data.foc) ? $("#follow_count").text(data.foc): $("#follow_count").text(" ");
         (data.s) ? $("#status_count").text(data.s) :$("#status_count").text(" ");
         (data.d) ? $("#person_discription").text(data.d) : $("#person_discription").text(" ");
-
+        (data.ac) ? $()
 	},
 	onErrorGetPersonInfo : function()
 	{
